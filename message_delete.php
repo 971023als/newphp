@@ -8,7 +8,7 @@
 
 
 
-	$con = mysqli_connect("localhost", "root", "", "sample");
+	$con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
 
 
 	$sql = "delete from message where num=$num";

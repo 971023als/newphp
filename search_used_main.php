@@ -28,7 +28,7 @@ else {?>
 		else
 			$page = 1;
 
-		$con = mysqli_connect("localhost", "user1", "12345", "goodpang");
+		$con = mysqli_connect("localhost", "user", "1q2w3e4r", "goodpang");
 		$sql = "select * from product_my where id !='이재윤' and (product_name like '%$search%' or memo like '%$search%' or id like '%$search%' ) order by num desc";
 		$result = mysqli_query($con, $sql);
 		$total_record = mysqli_num_rows($result);

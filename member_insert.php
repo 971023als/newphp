@@ -10,7 +10,7 @@
     $regist_day = date("Y-m-d (H:i)");
 
 
-    $con = mysqli_connect("localhost", "root", "", "sample");
+    $con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
 
 	$sql = "insert into members(id, pass, name, email, address, regist_day, level, point) ";
 	$sql .= "values('$id', '$pass', '$name', '$email', '$address', '$regist_day', 9, 0)";

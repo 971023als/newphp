@@ -20,7 +20,7 @@ h3 {
    $address = $_POST["address"];
 
 
-      $con = mysqli_connect("localhost", "root", "", "sample");
+      $con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
 
 
       $sql = "select * from members where id='$id' and name='$name' and address='$address'";

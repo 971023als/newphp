@@ -43,7 +43,7 @@
 	else
 		$page = 1;
 
-	$con = mysqli_connect("localhost", "user1", "12345", "goodpang");
+	$con = mysqli_connect("localhost", "user", "1q2w3e4r", "goodpang");
 	$sql = "select * from point_mall order by num desc";
 	$result = mysqli_query($con, $sql);
 	$total_record = mysqli_num_rows($result);

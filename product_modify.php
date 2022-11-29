@@ -7,7 +7,7 @@
     $price = $_POST["price"];
     $memo = $_POST["memo"];
 
-    $con = mysqli_connect("localhost", "root", "", "sample");
+    $con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
     $sql = "update product_my set product_name='$product_name', price='$price', memo='$memo'";
     $sql .= " where num=$num";
     mysqli_query($con, $sql);

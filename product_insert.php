@@ -74,7 +74,7 @@
 		$copied_file_name = "";
 	}
 
-	$con = mysqli_connect("localhost", "root", "", "sample");
+	$con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
 
   $sql = "insert into product_my(id, name, product_name, price, memo, regist_day, hit,  file_name, file_type, file_copied) ";
 	$sql .= "values('$userid', '$username', '$product_name', '$price', '$memo', '$regist_day', 0, ";

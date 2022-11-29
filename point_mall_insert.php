@@ -74,7 +74,7 @@
 		$copied_file_name = "";
 	}
 
-	$con = mysqli_connect("localhost", "user1", "12345", "goodpang");
+	$con = mysqli_connect("localhost", "user", "1q2w3e4r", "goodpang");
 
   $sql = "insert into point_mall(product_name, point,  file_name, file_type, file_copied) ";
 	$sql .= "values('$product_name', '$point', '$upfile_name', '$upfile_type', '$copied_file_name')";

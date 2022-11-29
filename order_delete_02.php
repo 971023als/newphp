@@ -3,7 +3,7 @@
     $num   = $_GET["num"];
     $page   = $_GET["page"];
 
-    $con = mysqli_connect("localhost", "root", "", "sample");
+    $con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
     $sql = "delete from order_my where num = $num";
     mysqli_query($con, $sql);
     mysqli_close($con);

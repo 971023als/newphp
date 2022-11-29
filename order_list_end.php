@@ -33,7 +33,7 @@
 	else
 		$page = 1;
 
-  $con = mysqli_connect("localhost", "root", "", "sample");
+  $con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
   $sql = "select * from point_mall_buy where id='$_SESSION[userid]' and order_check ='구매완료' order by num desc";
 	$result = mysqli_query($con, $sql);
 	$total_record = mysqli_num_rows($result);

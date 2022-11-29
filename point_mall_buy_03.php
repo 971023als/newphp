@@ -4,7 +4,7 @@ $userid = $_GET["id"];
 $totalpoint = $_GET["totalpoint"];
 $count = $_GET["count"];
 
-$con = mysqli_connect("localhost", "root", "", "sample");
+$con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
 $sql = "select * from point_mall where num=$num";
 $result = mysqli_query($con, $sql);
 $row = mysqli_fetch_array($result);

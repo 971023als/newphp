@@ -37,7 +37,7 @@
 	else
 		$page = 1;
 
-	$con = mysqli_connect("localhost", "root", "", "sample");
+	$con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
     $sql = "select * from basket_my where id='$_SESSION[userid]' order by num desc";
     $result = mysqli_query($con, $sql);
     $total_record = mysqli_num_rows($result);

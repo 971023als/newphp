@@ -10,7 +10,7 @@ else $username = "";
     $page  = $_GET["page"];
 
 
-    $con = mysqli_connect("localhost", "root", "", "sample");
+    $con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
     $sql = "select * from basket_my where num=$num";
     $result = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($result);

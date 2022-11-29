@@ -49,7 +49,7 @@ function check_product() {
 	$num  = $_GET["num"];
 	$page = $_GET["page"];
 
-	$con = mysqli_connect("localhost", "user1", "12345", "goodpang");
+	$con = mysqli_connect("localhost", "user", "1q2w3e4r", "goodpang");
 	$sql = "select * from point_mall where num=$num";
 	$result = mysqli_query($con, $sql);
 	$row = mysqli_fetch_array($result);

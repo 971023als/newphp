@@ -76,7 +76,7 @@ else
     $subject = $_POST["subject"];
     $content = $_POST["content"];
           
-    $con = mysqli_connect("localhost", "root", "", "sample");
+    $con = mysqli_connect("localhost", "user", "1q2w3e4r", "sample");
     $sql = "update board set subject='$subject', content='$content',file_name='$upfile_name', file_type='$upfile_type', file_copied='$copied_file_name'";
     $sql .= " where num=$num";
     mysqli_query($con, $sql);
